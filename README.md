@@ -107,3 +107,11 @@ public class App {
 }
 
 ```
+
+### Result
+```
+Order by Ranking : [Steven, John, Voger]
+Order by Age : [Steven, Voger, John]
+Order by Name : [John, Steven, Voger]
+
+```
