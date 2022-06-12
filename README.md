@@ -1,1 +1,1 @@
-# strategy-design-pattern
+# Strategy Design Pattern
