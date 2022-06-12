@@ -115,3 +115,7 @@ Order by Age : [Steven, Voger, John]
 Order by Name : [John, Steven, Voger]
 
 ```
+
+# References :
+https://www.baeldung.com/java-comparator-comparable
+
