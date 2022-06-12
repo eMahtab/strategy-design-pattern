@@ -7,7 +7,7 @@ The Strategy pattern defines a family of algorithms, encapsulates each one, and 
 
 ```java
 public class Player {
-	private int ranking;
+    private int ranking;
     private String name;
     private int age;
     
@@ -74,3 +74,36 @@ public class PlayerOrderByName implements Comparator<Player>{
 ```
 
 
+```java
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class App {
+
+	public static void main(String[] args) {
+	    List<Player> players = new ArrayList<>();
+	    Player player1 = new Player(59, "John", 26);
+	    Player player2 = new Player(67, "Voger", 24);
+	    Player player3 = new Player(45, "Steven", 23);
+	    players.add(player1);
+	    players.add(player2);
+	    players.add(player3);
+	    
+	    PlayerOrderByRanking rankComparator = new PlayerOrderByRanking();
+	    Collections.sort(players, rankComparator);
+	    System.out.println("Order by Ranking : " + players);
+	    
+	    PlayerOrderByAge ageComparator = new PlayerOrderByAge();
+	    Collections.sort(players, ageComparator);
+	    System.out.println("Order by Age : " + players);
+	    
+	    PlayerOrderByName nameComparator = new PlayerOrderByName();
+	    Collections.sort(players, nameComparator);
+	    System.out.println("Order by Name : " + players);
+	    
+	}
+
+}
+
+```
