@@ -116,6 +116,14 @@ Order by Name : [John, Steven, Voger]
 
 ```
 
+### Side Note : Some benefits of Comparator interface
+
+1. Sometimes we can't modify the source code of the class whose objects we want to sort, thus making the use of Comparable impossible
+
+2. Using Comparators allows us to avoid adding additional code to our domain classes
+
+3. We can define multiple different comparison strategies, which isn't possible when using Comparable
+
 # References :
 https://www.baeldung.com/java-comparator-comparable
 
